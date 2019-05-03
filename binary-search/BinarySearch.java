@@ -24,6 +24,6 @@ public class BinarySearch{
         Arrays.sort(myArr);
         int toBeSearched = 57;
         int result = new BinarySearch().searchItem(myArr,toBeSearched);
-        System.out.println(index!=-1?toBeSearched + " found ":toBeSearched + " Not found!");
+        System.out.println(result!=-1?toBeSearched + " found ":toBeSearched + " Not found!");
     }
 }
