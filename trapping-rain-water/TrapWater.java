@@ -19,7 +19,6 @@ public class TrapWater{
         for (int i = 0; i < heights.length; i++) {
             leftHighest[i + 1] = Math.max(leftHighest[i], heights[i]);            
         }
-        System.out.println(Arrays.toString(leftHighest));
         int rightHighest = 0;
         for (int i = heights.length - 1; i >= 0; i--) {
             rightHighest = Math.max(heights[i], rightHighest);
