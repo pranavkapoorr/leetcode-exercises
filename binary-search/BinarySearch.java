@@ -10,9 +10,25 @@ public class BinarySearch{
             if(element == myArr[middleIndex]){
                 return middleIndex;
             }else if(element < myArr[middleIndex]){
-                return searchIndex(Arrays.copyOfRange(myArr, 0, middleIndex ), element);
+                return searchItem(Arrays.copyOfRange(myArr, 0, middleIndex ), element);
             }else{
-                return searchIndex(Arrays.copyOfRange(myArr, middleIndex + 1, myArr.length), element);
+                return searchItem(Arrays.copyOfRange(myArr, middleIndex + 1, myArr.length), element);
+            }
+        }
+        
+        return -1;
+    }
+
+    private int searchItemIndex(int[] myArr, int start, int end, int element){
+        if(myArr.length-1 >= 1){
+            int middleIndex = start + (end - start)/2;
+        
+            if(element == myArr[middleIndex]){
+                return middleIndex;
+            }else if(element < myArr[middleIndex]){
+                return searchItemIndex(myArr, 0, middleIndex -1, element);
+            }else{
+                return searchItemIndex(myArr, middleIndex + 1, end, element);
             }
         }
         
@@ -24,6 +40,8 @@ public class BinarySearch{
         Arrays.sort(myArr);
         int toBeSearched = 57;
         int result = new BinarySearch().searchItem(myArr,toBeSearched);
+        int result1 = new BinarySearch().searchItemIndex(myArr,0,myArr.length-1,toBeSearched);
         System.out.println(result!=-1?toBeSearched + " found ":toBeSearched + " Not found!");
+        System.out.println(result1!=-1?toBeSearched + " found at index: "+result1:toBeSearched + " Not found!");
     }
 }
