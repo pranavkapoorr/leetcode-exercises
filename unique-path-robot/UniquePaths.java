@@ -23,7 +23,7 @@ How many possible unique paths are there?
                 totalPaths[0][j] = 1;
             }
 
-            for(int i = 1; i < m; i++){ //for rest of squares, its sum of previous squares
+            for(int i = 1; i < m; i++){ //number of unique paths to other squares on the left border would be the sum of the number of unique paths to its previous left square and top square.
                 for(int j = 1; j < n; j++){
                     totalPaths[i][j] = totalPaths[i - 1][j] + totalPaths[i][j - 1];
                 }
