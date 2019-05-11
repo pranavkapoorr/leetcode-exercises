@@ -4,7 +4,9 @@ import java.util.LinkedList;
 public class RemoveFromList{
 
     private LinkedList removeFromEnd(LinkedList list, int index){
-        list.remove(list.size()-index);
+        if(list != null && index >= 0){
+            list.remove(list.size()-index);
+        }
         return list;
     }
 
