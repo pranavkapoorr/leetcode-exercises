@@ -1,4 +1,6 @@
-public class Factorial{
+package factorial;
+
+public class Factorial {
 
     private int findFactorial(int number){
         return number == 0||number == 1? 1 : number * findFactorial(number - 1);
