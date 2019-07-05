@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="remove-nth-element-from-linkedlist-end/|snap-crackle/|salary-tax-calculation/|unique-path-robot/|binary-search/|list-items-print-in-column/|search-insert-position/|buzz-fizz/|linear-search/|merge-2-lists/|find-first-unique-char-index-in-string/|trapping-rain-water/|reverse-a-list/|square-root/|reverse-integer/|removing-duplicates-from-sorted-array/|validate-parentheses/" kind="src" path=""/>
+	<classpathentry kind="src" path="binary-search"/>
+	<classpathentry kind="src" path="buzz-fizz"/>
+	<classpathentry kind="src" path="find-first-unique-char-index-in-string"/>
+	<classpathentry kind="src" path="linear-search"/>
+	<classpathentry kind="src" path="list-items-print-in-column"/>
+	<classpathentry kind="src" path="merge-2-lists"/>
+	<classpathentry kind="src" path="remove-nth-element-from-linkedlist-end"/>
+	<classpathentry kind="src" path="removing-duplicates-from-sorted-array"/>
+	<classpathentry kind="src" path="reverse-a-list"/>
+	<classpathentry kind="src" path="reverse-integer"/>
+	<classpathentry kind="src" path="salary-tax-calculation"/>
+	<classpathentry kind="src" path="search-insert-position"/>
+	<classpathentry kind="src" path="snap-crackle"/>
+	<classpathentry kind="src" path="square-root"/>
+	<classpathentry kind="src" path="trapping-rain-water"/>
+	<classpathentry kind="src" path="unique-path-robot"/>
+	<classpathentry kind="src" path="validate-parentheses"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
