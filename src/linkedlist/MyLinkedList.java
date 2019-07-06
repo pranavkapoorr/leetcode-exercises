@@ -1,15 +1,24 @@
 package linkedlist;
 
+
 public class MyLinkedList {
     private Node head;
     public MyLinkedList(){
         this.head = new Node(null,null);
     }
 
-    public void addItem(Object item){
+    public void addItemInFront(Object item){
         Node node = new Node(item,null);
         node.next = head.next;
         head.next = node;
+    }
+    public void addItemInEnd(Object item){
+        Node node = new Node(item,null);
+        Node secondlastNode = head;
+        while(secondlastNode.next!=null) {
+        	secondlastNode = secondlastNode.next;
+        }
+        secondlastNode.next = node;
     }
     public void printAll(){
     	Node temp = head;
@@ -41,16 +50,14 @@ public class MyLinkedList {
 
     public static void main(String[] args) {
         MyLinkedList list = new MyLinkedList();
-        list.addItem(1);
-        list.addItem(3);
-        list.addItem(2);
-        list.addItem(4);
-        list.printAll();
-        System.out.println();
-        list.deleteItem(2);
+        list.addItemInFront(1);
+        list.addItemInFront(2);
+        list.addItemInEnd(3);
         list.printAll();
         System.out.println();
         list.deleteItem(3);
+        list.addItemInEnd(4);
+        list.addItemInFront(5);
         list.printAll();
     }
 
