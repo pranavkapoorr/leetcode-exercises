@@ -11,6 +11,10 @@ public class Solution {
 		Map<Character,Integer> data = findOccurences(str);
 		return data.containsKey(ch) ? data.get(ch) : 0;
 	}
+	public void showOccurences(String str) {
+		Map<Character,Integer> data = findOccurences(str);
+		data.forEach((ch,o) -> System.out.println(ch + " -> " + o +" times"));
+	}
 	private Map<Character,Integer> findOccurences(String str) {
 		Map<Character,Integer> map = new HashMap<>();
 		for(char c : str.toCharArray()) {
@@ -25,5 +29,6 @@ public class Solution {
 	public static void main(String[] args) {
 		System.out.println(new Solution().isRepeated('o',"Hello"));
 		System.out.println(new Solution().timesRepeated('l',"Hello"));
+		new Solution().showOccurences("Hello");
 	}
 }
