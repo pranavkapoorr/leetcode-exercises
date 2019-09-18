@@ -7,6 +7,10 @@ public class Solution {
 		Map<Character,Integer> data = findOccurences(str);
 		return data.containsKey(ch) ? data.get(ch) > 1 ? true : false : false;
 	}
+	public int timesRepeated(char ch, String str) {
+		Map<Character,Integer> data = findOccurences(str);
+		return data.containsKey(ch) ? data.get(ch) : 0;
+	}
 	private Map<Character,Integer> findOccurences(String str) {
 		Map<Character,Integer> map = new HashMap<>();
 		for(char c : str.toCharArray()) {
@@ -20,5 +24,6 @@ public class Solution {
 	}
 	public static void main(String[] args) {
 		System.out.println(new Solution().isRepeated('o',"Hello"));
+		System.out.println(new Solution().timesRepeated('l',"Hello"));
 	}
 }
