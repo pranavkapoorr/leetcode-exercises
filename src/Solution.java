@@ -1,4 +1,3 @@
-import java.util.*;
 
 class Solution {
     int solution(int M, int[] A) {

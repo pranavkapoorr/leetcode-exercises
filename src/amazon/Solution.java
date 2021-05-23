@@ -1,7 +1,6 @@
 package amazon;
 import java.util.*;
 
-import com.sun.xml.internal.ws.util.StringUtils;
 // IMPORT LIBRARY PACKAGES NEEDED BY YOUR PROGRAM
 // SOME CLASSES WITHIN A PACKAGE MAY BE RESTRICTED
 // DEFINE ANY CLASS AND METHOD NEEDED
