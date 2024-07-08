@@ -1,4 +1,4 @@
-
+/**find max occurence**/
 class Solution {
     int solution(int M, int[] A) {
         int N = A.length;
