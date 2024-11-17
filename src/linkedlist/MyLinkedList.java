@@ -59,6 +59,7 @@ public class MyLinkedList {
         //list.addItemInEnd(3);
         list.printAll();
         list.reverse();
+        list.printAll();
     }
     public int Length() {
     	return this.length;
